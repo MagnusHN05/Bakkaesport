@@ -1,0 +1,34 @@
+.headline-img {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 20rem !important;
+
+}
+.headline-img::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(to top, #000000 0%, #00000000 100%);
+}
+.headline-name-parent {
+    height: 100%;
+    width: 100%;
+    display: flex ;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.headline-name {
+    z-index: 10;
+    color: white;
+    display: block;
+    user-select: none;
+    padding-bottom: var(--whitespace);
+    font-size: var(--title-3-size);
+}

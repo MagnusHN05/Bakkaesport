@@ -1,0 +1,32 @@
+
+.team-comp-parent {
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--whitespace);
+}
+.game-logo-parent {
+    width: max-content;
+    margin-bottom: var(--whitespace);
+}
+.game-logo-parent > img {
+    height: 3rem !important;
+    border-radius: 0;
+}
+.game-logo-parent.fill > img{
+    filter: brightness(0) invert(1);
+}
+
+.game-logo-parent > hr {
+    border: 2px solid white;
+}
+.player-grid {
+    text-align: center;
+}
+.player-grid > * {
+    display: inline-block;
+    margin: 10px;
+}

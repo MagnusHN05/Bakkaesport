@@ -1,0 +1,286 @@
+:root {
+  --main-color: #F81894;
+  --secondary-color: #89E6CC;
+  --dark-color-1: #212936;
+  --dark-color-2: rgba(33, 41, 54, 0.8);
+  --dark-color-3: rgba(33, 41, 54, 0.5);
+  --passive-grey: #707070;
+  --white-color: #FFFFFF;
+  --white-overlay: rgba(255, 255, 255, 0.07);
+  --rounded: 40px;
+  --title-1-size: 3rem;
+  --title-2-size: 2rem;
+  --title-3-size: 1.5rem;
+  --whitespace: 3rem;
+  --border-curve: 1rem;
+}
+img {
+  border-radius: var(--border-curve);
+}
+.App {
+  margin: 0;
+  text-align: center;
+  background-color: #212936;
+}
+.generic-title {
+  color: var(--white-color);
+  font-size: var(--title-1-size);
+  margin: var(--whitespace) 0;
+}
+.pink {
+  color: var(--main-color) !important;
+}
+.turquoise {
+  color: var(--secondary-color) !important;
+}
+.text-center {
+  text-align: center;
+}
+.spillere-title {
+  margin-top: 10.625rem;
+}
+
+
+.esport-grid-container {
+  width: 100vw;
+  display: flex;
+  margin-top: var(--whitespace);
+}
+.esport-grid-container > *{
+  width: calc(100% / 3);
+  height: 15rem;
+  overflow-y: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.esport-grid-container > *::after {
+  font-size:var(--title-2-size);
+  color: var(--white-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.esport-grid-container > *::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all .3s ease-in-out;
+}
+.esport-grid-container > *:hover::before {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.player-stats::after {
+  content: "PLAYER STATS";
+}
+.match-history::after {
+  content: "MATCH HISTORY";
+}
+.merchandise::after {
+  content: "MERCHANDISE";
+}
+
+
+
+.frontpage-start {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  padding-top: 10.625rem;
+}
+.frontpage-start .image-container {
+  padding: 0;
+  width: 25rem;
+  height: 25rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frontpage-start img {
+  width: 100%;
+}
+.frontpage-start h1 {
+  font-size: 6rem;
+  text-align: left;
+}
+.frontpage-start span {
+  color: var(--main-color);
+  display: block;
+}
+.main-btn {
+  color: black !important;
+  font-size: var(--title-2-size) !important;
+  background-color: var(--main-color) !important;
+  border: none !important;
+  padding: 0 4rem !important;
+  border-radius: 10rem !important;
+  margin-top: var(--whitespace);
+}
+.match-view-comp {
+  width: 100vw;
+  padding: 0 4rem !important;
+  font-size: var(--title-3-size);
+  border-top: 1px solid var(--passive-grey);
+  border-bottom: 1px solid var(--passive-grey);
+  color: var(--white-color);
+  margin-top: var(--whitespace);
+}
+
+.get-to-know-us {
+  margin-top: var(--whitespace);
+  width: 100vw;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-to-know-us p {
+  width: 50vw;
+}
+.get-to-know-us h1 {
+  color: var(--secondary-color);
+}
+.socials img {
+  filter: invert(100%);
+  height: 64px;
+  width: 64px;
+}
+
+/*daniel*/
+@media only screen and (max-width: 1000px) {
+  .esport-grid-container {
+    flex-direction: column;
+  }
+  .esport-grid-container > *{
+    width: 100%;
+  }
+
+  .frontpage-start {
+    flex-direction: column;
+  }
+  .frontpage-start h1 {
+    text-align: center;
+    font-size:var(--title-1-size);
+  }
+  .frontpage-start span {
+    display: inline-block;
+  }
+  .frontpage-start .image-container {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+
+.text-container p {
+  font-size: 18px;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+    background:#fcfcfc;
+
+}
+footer{
+  background:#111111;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight:400;
+  text-transform:capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+
+}
+
+.socials li{
+  margin:0 10px;
+
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+
+}
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+.player-of-the-week {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-info {
+  margin: 1rem;
+  margin-bottom: var(--whitespace);
+}
+.player-info p{
+  margin: 0;
+}

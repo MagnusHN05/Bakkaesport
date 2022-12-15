@@ -1,0 +1,13 @@
+.tumbnail-img {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    grid-column-start: 7 !important;
+    grid-column-end: 11 !important;
+}
+@media only screen and (max-width: 55rem) {
+    .tumbnail-img {
+        grid-column-start: 7 !important;
+        grid-column-end: 13 !important;
+    }
+}

@@ -1,0 +1,16 @@
+.not-found {
+    margin-top: 10.6rem;
+    font-size: larger;
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.not-found * {
+    text-align: center;
+    color:aqua;
+        
+}

@@ -1,0 +1,28 @@
+.content-tumbnail {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    grid-column-start: 3 !important;
+    grid-column-end: 7 !important;
+    background-color: var(--white-overlay);
+    padding: var(--whitespace);
+    grid-row-start: 3 !important;
+    grid-row-end: 4 !important;
+    /* max-height: 10rem !important; */
+}
+.content-tumbnail h1, .content-tumbnail h2, .content-tumbnail h3, .content-tumbnail p {
+    text-align: left;
+    color: white;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media only screen and (max-width: 55rem) {
+    .content-tumbnail {
+        grid-column-start: 1 !important;
+        grid-column-end: 7 !important;
+    }
+}
